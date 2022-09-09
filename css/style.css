@@ -1,8 +1,27 @@
+.box {
+margin: auto;
+width: 200px;
+height: 200px;
+background: hotpink;
+rotate: 45deg;
+animation-name: example; 
+animation-duration: 500ms;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes example {
+  from {rotate: 0deg; background-color:hotpink;}
+  to {rotate: 180deg; background-color:lightblue;}
+}
+
+
+
+
 body {
-  
-  margin: auto;
+ 
+ margin: auto;
   background-color:grey;	
-  /*background-color: seaGreen;*/
+  
 }
 header {
 text-align:center;
@@ -11,7 +30,7 @@ h1 {
   color: navy;
   margin-left: 20px;
 }
-ol:hovered {
+ol:hover {
 color:hotpink;
 border:50px dotted red:
 }
@@ -25,7 +44,48 @@ a:hover {
   border:2px solid blue;
 	
 }
+
+button { 
+width:200px;
+height:100px;
+border: 2px solid lightBlue;
+border-radius: 30px;
+background-color:lightBlue;
+animation-name: buttonCol; 
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes buttonCol {
+  from {background-color:lightBlue;}
+  to {background-color:lightGreen;}
+}
+button:active {
+ background-color: lightGreen;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+@keyframes buttonAct {
+from(transform: scale(0.5);)
+to(transform: scale(1.5);)
+}
+button:hover {
+animation-name:buttonHover;
+animation-duration: 1500ms;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+@keyframes buttonHover {
+0% {rotate:0;}
+50% {rotate:-3deg;}
+100% {rotate:3deg;}
+}
 div {
+margin:auto;
+width:300px;
+}
+.divs {
 width:300px;
 background-color:seaGreen;
 border: 2px solid white;
@@ -34,8 +94,7 @@ margin: auto;
 a {
   color:navy;
   border-style:solid;
-  
-}
+  }
 img {
   /*outline: 1px solid transparent;*/
  /* border-image:radial-gradient(red,yellow);*/
