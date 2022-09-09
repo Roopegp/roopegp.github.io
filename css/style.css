@@ -21,7 +21,19 @@ body {
  
  margin: auto;
   background-color:grey;	
-  
+	animation-name: bodyCol; 
+	animation-duration: 5000ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;  
+}
+@keyframes bodyCol {
+ from {background-color:lightYellow;}
+  to {background-color:lightGreen;}
+}
+table {
+border: 2px solid lightBlue;
+border-radius:30px;
+
 }
 header {
 text-align:center;
@@ -51,10 +63,11 @@ height:100px;
 border: 2px solid lightBlue;
 border-radius: 30px;
 background-color:lightBlue;
-animation-name: buttonCol; 
+box-shadow: 5px 5px 5px teal;
+animation-name:buttonCol;
 animation-duration: 5000ms;
-animation-iteration-count: infinite;
-animation-direction: alternate;
+animation-iteration-count:infinite;
+animation-direction:alternate;
 }
 
 @keyframes buttonCol {
@@ -70,6 +83,8 @@ button:active {
 from(transform: scale(0.5);)
 to(transform: scale(1.5);)
 }
+
+
 button:hover {
 animation-name:buttonHover;
 animation-duration: 1500ms;
@@ -77,16 +92,16 @@ animation-iteration-count:infinite;
 animation-direction:alternate;
 }
 @keyframes buttonHover {
-0% {rotate:0;}
+0% {rotate:0;background-color:lightBlue;}
 50% {rotate:-3deg;}
-100% {rotate:3deg;}
+100% {rotate:3deg;lightGreen}
 }
 div {
-margin:auto;
 width:300px;
+margin:auto;
 }
 .divs {
-width:300px;
+width:200px;
 background-color:seaGreen;
 border: 2px solid white;
 margin: auto;
