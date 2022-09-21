@@ -1,0 +1,43 @@
+:root {
+  --bg: #97ce4c;
+}
+body {
+margin:0;
+background-color:#e4a788;
+}
+
+
+header {
+	background-color:var(--bg);
+	width:1600px;
+	border-radius:20px;
+	text-align:center;
+	margin:0 auto;
+}
+
+header img {
+border:15px solid var(--bg);
+border-radius:45px;
+}
+
+.flex {
+display:flex;
+justify-content:center;
+}
+aside {
+height:900px;
+width:150px;
+background-color:var(--bg)
+}
+.main{
+margin:0 auto;
+background-color:var(--bg);
+border:2px solid gray;
+border-radius:2px;
+width:600px;
+}
+
+footer {
+background-color:var(--bg);
+}
+

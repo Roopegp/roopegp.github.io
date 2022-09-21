@@ -129,14 +129,5 @@ a {
   border-style:solid;
   }
 img {
-  /*outline: 1px solid transparent;*/
- /* border-image:radial-gradient(red,yellow);*/
-  /*border-style:solid;*/
-  outline-style:groove;
-  outline-color:blue;
-  outline-width:10px;
-  border-image-slice: 1;
-  padding: 0px;
-  width:1000px;
-  height:400px;
+  border-radius:30px;
 }
