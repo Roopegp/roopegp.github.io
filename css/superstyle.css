@@ -12,8 +12,8 @@ background-color:#191970;
 /*Header Tyylit*/
 header {
 	background-color:var(--bg);
-	width:1600px;
-	border-radius:20px;
+	
+	
 	text-align:center;
 	margin:0 auto;
 }
@@ -60,6 +60,7 @@ width:900px;
 }
 /*Flex classi Helppoon keskittämiseen*/
 .flex div {
+	
 display:flex;
 justify-content:center;
 }
@@ -82,7 +83,9 @@ background-color:var(--bg);
 	top:0;
 	width: 900px;
 	margin:0 auto;
-	
+	background-color:var(--bg);
+	border:2px solid var(--bg);
+	border-radius:10px;
 }
 .topbar { 
 	margin:0 auto;
@@ -97,6 +100,7 @@ background-color:var(--bg);
 	animation-duration: 5000ms;
 	animation-iteration-count:infinite;
 	animation-direction:alternate;
+	
 }
 @keyframes buttonCol {
   from {background-color:lightBlue;}
