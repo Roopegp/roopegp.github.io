@@ -84,18 +84,15 @@ animation-duration: 5000ms;
 animation-iteration-count:infinite;
 animation-direction:alternate;
 }
-.flex {
-	display:flex;
-	justify-content:center;
-}
-footer {
 
+footer {
+margin:0 auto;
 border: 5px solid gray;
 border-radius: 20px;
 text-align:center;
 width:800px;
 background-color:#c0c0c0;
-margin:10px 100px 10px 570px;
+
 }
 @keyframes buttonCol {
   from {background-color:lightBlue;}
