@@ -82,9 +82,9 @@ background-color:var(--bg);
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top:0;
-	width: 900px;
+	width: 800px;
 	margin:0 auto;
-	background-color:var(--bg);
+	
 	border:2px solid var(--bg);
 	border-radius:10px;
 }
