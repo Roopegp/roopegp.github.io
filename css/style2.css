@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
+    /*background-color: black;*/
+    color: #A45EE5;
+    background-color: beige;
+}
+@keyframes fun {
+    0% {transform:translateY( -1500px)}
+    100% {transform: translateY(0px);}
+}
+a:link {
+    text-decoration:salmon;
+}
+ a:visited {
+    text-decoration-color: #A45EE5;
+}
+@keyframes fun1 {
+    0% {transform:translateX(-1000px);}
+    98% {transform:translate(-50px);}
+    100% {transform:translateX(0);}
+}
+@keyframes fun2 {
+    0% {transform:translateX(1000px);}
+    98% {transform:translate(-50px);}
+    100% {transform:translateX(0);}
+}
+
+#anim {
+    animation:fun 2s;
+}
+.main{
+    /*animation:fun2 2s;*/
+    background-color: whitesmoke;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    display: flex;
+    justify-content:flex-start;
+}
+.main p {
+    width: 50px;
+}
+
+img {
+    animation:fun1 2s;
+    width:75%;
+    height:75%;
+    border: 5px solid #A45EE5;
+    border-radius:50%;
+}
+.edu {
+    animation: fun2 2s;
+    width: 800px;
+    height: fit-content;
+    border: 3px solid #A45EE5;
+    background-color: whitesmoke;
+    border-radius:15px;
+}
+.bubbles {
+    background-color :#DF0101; opacity :0.8;
+    border-radius: 50%;
+}
+.bubbles span {
+  
+    position: absolute;
+    display: block;
+    border: 5px;
+    border-radius: 50%;
+    animation: animate 5s ease-in-out infinite;
+
+}
+@keyframes animate {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    50% {
+        transform: translateX(190px);
+        width: -100px;
+        height: +100px;
+
+    }
+
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+
+.bubbles span:nth-child(1) {
+    top: 300px;
+    left: 250px;
+    height: 160px;
+    width: 160px;
+    background-color: purple;
+    opacity: 0.7;
+    animation-delay: 0.3s;
+    animation-direction: reverse;
+}
+
+.bubbles span:nth-child(2) {
+    top: 310px;
+    left: 400px;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    opacity: 0.9;
+    animation-delay: 0.3s;
+    animation-direction: reverse;
+    animation-duration: 2.3s;
+}
+
+.bubbles span:nth-child(3) {
+    top: 300px;
+    left: 700px;
+    height:  100px;
+    width:  100px;
+    background-color: #a97f58;
+    opacity: 0.9;
+    animation-delay: 0.5s;
+    animation-direction: reverse;
+    animation-duration: 2.6s;
+}
+
+.bubbles span:nth-child(4) {
+    top: 100px;
+    left: 1080px;
+    height: 100px;
+    width: 200px;
+    background-color: #FA58AC;
+    opacity: 0.9;
+    animation-delay: 0.7s;
+    animation-direction: reverse;
+    animation-duration: 2.3s;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content:center;
+}
