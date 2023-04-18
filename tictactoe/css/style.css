@@ -1,0 +1,8 @@
+#game { border-collapse: collapse }
+#game td { border: 1px solid black; width: 30px; height: 30px; text-align: center; cursor: pointer } 
+#game td.X, #game td.O { cursor: default }
+#game td.X { color: green }
+#game td.O { color: red }
+#game td.X:after { content: "X" }
+#game td.O:after { content: "O" }
+#game.inactive { background: silver }
