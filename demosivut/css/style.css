@@ -11,6 +11,11 @@ header {
     height: 250px;
     width: 770px;
 }
+.center {
+    position: relative;
+    display: flex;
+    justify-content:center;
+}
 .side-img img {
     width: 500px;
     height: 500px;
