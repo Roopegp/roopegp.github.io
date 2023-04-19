@@ -5,4 +5,3 @@
 #game td.O { color: red }
 #game td.X:after { content: "X" }
 #game td.O:after { content: "O" }
-#game.inactive { background: silver }

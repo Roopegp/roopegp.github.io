@@ -41,7 +41,7 @@ class TicTacToe {
     
 
     function Move(i) {
-        if ( !game.play(i)) return; // ignorataan clikki jos ei
+        if ( !game.play(i)) return; // ignorataan clikki jos ei ole laillinen liike
         display();
     }
 
@@ -53,6 +53,5 @@ class TicTacToe {
 
     table.addEventListener("click", e => Move(e.target.cellIndex + 3 * e.target.parentNode.rowIndex));
     btnNewGame.addEventListener("click", newGame);
-    //btnCpuMove.addEventListener("click", computerMove);
     newGame();
 })();
