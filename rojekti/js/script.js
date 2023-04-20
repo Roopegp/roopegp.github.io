@@ -34,5 +34,8 @@ reset.addEventListener("click", function(event) {
     body.style.border = "none";
     body.style.backgroundColor = "white";
     widget.style.backgroundColor = "green";
+    widget.style.margin = "auto";
+    widget.style.height = "800px";
+    widget.style.width = "800px";
     bgCol.value = "";
 })
