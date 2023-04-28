@@ -12,8 +12,23 @@
     <input type="date" class="js-pvm">
     <label>Rahanmäärä</label>
     <input type="number" class="js-hinta">
-    <label>Meno vai tulo</label>
-    <input type="text" class="js-menoOrTulo">
+    <fieldset>
+      <legend>Type:</legend>
+      <div>
+        <input type="radio" id="meno" name="type" value="meno"
+               checked>
+        <label for="meno">meno</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="tulo" name="type" value="tulo">
+        <label for="tulo">tulo</label>
+      </div>
+  
+      <div>
+        <input type="radio" id="joku-muu" name="type" value="joku-muu">
+        <label for="joku-muu">joku-muu</label>
+      </div>
     <label>add</label>
     <input type="submit" class="js-submit">
     <div class="accordion" id="accordionExample">
