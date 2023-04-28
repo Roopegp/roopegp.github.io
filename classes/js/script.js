@@ -1,15 +1,31 @@
-class person {
-    constructor(name,age,food) {
-        this.age = Number(age);
-        this.name = name;
-        this.food = food;
+class bill {
+    constructor(hinta,pvm,type) {
+        this.hinta = hinta;
+        this.pvm = pvm;
+        this.type = type;
+   }
+   isEmpty() {
+       return hinta ==0 && pvm == " " && this.type == " ";
+   }
+   print(dom) {
+        dom.innerHTML    += "<h1>" +this.hinta +"€ | "+ this.pvm + " | " +this.type +" </h1>";
+   }
 
-    }
-    makeSound(dom) {
-        dom.innerText = this.name +":"+ this.age + ":"+ this.food;
-    }
 }
+var billArr = new Array();
+var hinta = document.querySelector(".js-hinta");
+var pvm = document.querySelector(".js-pvm")
+var menoTulo = document.querySelector(".js-menoOrTulo")
+var acbod = document.querySelector(".accordion-body")
+var submit = document.querySelector(".js-submit").addEventListener("click",function(e) {
+    var type = menoTulo.value ? "Meno" : "Tulo";
+    var newBill = new bill(Number(hinta.value),pvm.value,type)
+    if(!newBill.isEmpty()) {
+        billArr.push(newBill);
+    }
+    acbod.innerText = "";
+    billArr.forEach(function(elm,i) {
+        elm.print(acbod);
+    })
+}) 
 
-var nathan = new person(prompt("name"),prompt("age"),prompt("Favorite food?"));
-nathan.makeSound(document.querySelector("h1"));
-nathan.age
