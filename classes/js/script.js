@@ -18,7 +18,7 @@ var pvm = document.querySelector(".js-pvm")
 var menoTulo = document.querySelector(".js-menoOrTulo")
 var acbod = document.querySelector(".accordion-body")
 var submit = document.querySelector(".js-submit").addEventListener("click",function(e) {
-    var type = menoTulo.value ? "Meno" : "Tulo";
+    var type = menoTulo.value;
     var newBill = new bill(Number(hinta.value),pvm.value,type)
     if(!newBill.isEmpty()) {
         billArr.push(newBill);
