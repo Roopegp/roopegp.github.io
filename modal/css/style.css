@@ -1,0 +1,8 @@
+.modal {
+    border: 2px solid black;
+    background-color: beige;    
+}
+.modal p {
+    border: 0px none white;
+    display: block;
+}
