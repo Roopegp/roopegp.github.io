@@ -1,0 +1,23 @@
+.char {
+    font-size: 50px;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+div h1 {
+    display: flex;
+    justify-content: center;
+}
+.char:hover {
+    color:green;
+    margin: 0px 0px 0px 0px;
+    animation-name: hover;
+    animation-duration: 4s;
+}
+@keyframes hover {
+   0%   {transform: scale(1.25);}
+  25%  {transform: scale(1.5);}
+  50%  {transform: scale(1.75);}
+  100% {transform: scale(2);}
+}
