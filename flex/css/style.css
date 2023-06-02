@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+#layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+#nav {
+    padding: 20px;
+    flex-basis: 100%;
+    border-bottom: 1px solid #aaa;
+}
+#nav button {
+    float:right;
+}
+#sidebar {
+    padding: 20px;
+    flex-basis: 20%;
+    
+    border-right: 1px solid #aaa;
+}
+#sidebar ul  {
+    padding:0;
+    float:left;
+}
+
+.content {
+    flex-basis: 80%;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+@media(max-width:640px) {
+    #sidebar, .content {
+        flex-basis: 100%;
+        border-right: 0;
+    }
+}
+@media(max-width:475px) {
+    #sidebar {
+        display: none;
+    }
+}
