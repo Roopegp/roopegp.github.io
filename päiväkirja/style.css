@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    background-color: grey;
+}
+header {
+    text-align: center;
+}
+.container {
+    border: none 3px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    background-color: #151716;
+}
+div {
+    padding: 20px;
+    width: 90%;
+    border: 2px white solid;
+    margin: auto;   
+}
