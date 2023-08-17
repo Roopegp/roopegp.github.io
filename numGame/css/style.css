@@ -5,12 +5,13 @@
     height: 800px;
     display: flex;
     border-radius: 15px;
-    justify-content: left;
+    justify-content: center;
 }
 p {
     padding: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
+    width: 300px;
     height: 10%;
 }
 .startgame {
@@ -50,10 +51,10 @@ p {
     display: none;
 }
 button {
-    margin:auto;
+    margin: auto;
+    padding: 5px;
     text-align: center;
     border: 5px rgb(139, 204, 235) solid;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
 }
