@@ -1,0 +1,59 @@
+.container {
+    margin:auto;
+    padding: 0px;
+    border: 20px rgb(139, 204, 235) solid;
+    height: 800px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: left;
+}
+p {
+    padding: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    height: 10%;
+}
+.startgame {
+    background-color: aqua;
+    border: 5px aquamarine solid;
+    border-radius: 4px;
+    
+}
+.score {
+    border: 5px rgb(52, 184, 245) solid;
+    display: flex;    
+    justify-content: center;
+    width: 30%;
+    background-color: grey;
+}
+.image {
+    width: 70%;
+    background-color: blueviolet;
+}
+#right {
+    color:green;
+    background-color: rgb(150, 224, 150);
+    display: none;
+}
+#wrong {
+    color:red;
+    background-color: rgb(223, 149, 149);
+    display: none;
+    
+}
+#imgur {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#restart {
+    display: none;
+}
+button {
+    margin:auto;
+    text-align: center;
+    border: 5px rgb(139, 204, 235) solid;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
