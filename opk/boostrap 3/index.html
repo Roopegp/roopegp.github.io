@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="bg-info mt-4 p-5 bg-primary text-white rounded">
+            <h1 class="text-center"><b>Ilmoita Tähän tähtihavainnosta</b></h1>
+        </div>
+
+    <form action="https://slcode.alwaysdata.net/formtest/read.php" method="post">
+        <div class="mb-3 mt-3">
+            <label for="paivamaara" class="form-label">Päivämäärä</label>
+            <input type="date" name="paivamaara"  class="form-control"id ="paivamaara">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="kellonaika"class="form-label">AlkuAika</label> 
+            <input type="time" name="kellonaika"  class="form-control"id="kellonaika">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="paikka"class="form-label">Tapahtumapaikka</label>
+            <input type="text" name="paikka" class="form-control" id="paikka">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="kuvaus"class="form-label">Tapahtuman kuvaus</label>
+            <input type="tel" name="kuvaus"  class="form-control"id="kuvaus"class="form-control" value="kirjoita kuvaus tähän">
+        </div>
+        <div class="mb-3 mt-3">
+        <label for="nimi"class="form-label">Havannoinnin tekijän nimi</label>
+        <input type="text" name="nimi" class="form-control" id="nimi">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="sahkoposti"class="form-label">Sähköpostiosoite</label>
+            <input type="text" name="sahkoposti"  class="form-control"id="sahkoposti">
+         </div>
+            <label for="puhelin"class="form-label">Puhelinnumero</label>
+            <input type="text" name="puhelin"  class="form-control"id="puhelin">
+        <div class="mb-3 mt-3">
+            <label for="tiedot"class="form-label"> Saa näkyä tietoni</label>
+        
+            <input type="checkbox" name="tiedot" class="form-control" id="tiedot">
+        </div>
+        <div class="mb-3 mt-3">
+            <input type="submit" name="submit" class="form-control bg-primary text-white" id="#">
+        </div>
+
+    </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
