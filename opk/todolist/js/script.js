@@ -17,7 +17,6 @@ function yeetChild() {
     }
 }
 function yeetCurrentChild() {
-
     this.parentNode.remove();
     var index = currentItems.findIndex(e => e == this.parentNode.innerText);
     currentItems.splice(index, 1);
@@ -34,7 +33,7 @@ function doSomething(e) {
     let btnChild = document.createElement("button");
     btnChild.setAttribute("class", "btn-danger btn btn-lg rounded-1")
     btnChild.innerHTML = "Poista";
-    btnChild.addEventListener("click", yeetChild);
+    btnChild.addEventListener("click", yeetCurrentChild);
     let child = document.createElement("li");
     child.setAttribute("class", "list-group-item");
     child.innerHTML = txtField.value;
