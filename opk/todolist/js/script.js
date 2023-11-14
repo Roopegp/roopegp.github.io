@@ -1,16 +1,16 @@
-var txtField = document.getElementById("tehtava");
-var btn = document.getElementById("btn");
-var btndel = document.getElementById("btndel");
-var list = document.getElementById("list");
-var currentItems = [];
+let txtField = document.getElementById("tehtava");
+let btn = document.getElementById("btn");
+let btndel = document.getElementById("btndel");
+let list = document.getElementById("list");
+let currentItems = [];
 load();
 btn.addEventListener("click", doSomething);
 btndel.addEventListener("click", yeetChild);
 function yeetChild() {
     list.removeChild(list.lastElementChild);
-    var index = currentItems.findIndex(e => e == this.parentNode.innerText);
+    var index = currentItems.findIndex(e => e == list.lastElementChild.innerHTML);
     currentItems.splice(index, 1);
-    console.log(currentItems);
+    console.log(index);
     if (typeof (Storage) !== "undefined") {
         localStorage.removeItem("items");
         localStorage.setItem("items", JSON.stringify(currentItems));
@@ -18,11 +18,11 @@ function yeetChild() {
 }
 function yeetCurrentChild() {
     this.parentNode.remove();
-    var index = currentItems.findIndex(e => e == this.parentNode.innerText);
+    const index = currentItems.findIndex(e => e == this.parentNode.innerText);
     currentItems.splice(index, 1);
+    console.log(this.parentNode.innerText);
     console.log(currentItems);
     if (typeof (Storage) !== "undefined") {
-        localStorage.removeItem("items");
         localStorage.setItem("items", JSON.stringify(currentItems));
     }
 }
@@ -36,10 +36,11 @@ function doSomething(e) {
     btnChild.addEventListener("click", yeetCurrentChild);
     let child = document.createElement("li");
     child.setAttribute("class", "list-group-item");
+    child.setAttribute("value",txtField.value);
     child.innerHTML = txtField.value;
     child.appendChild(btnChild);
     list.appendChild(child);
-    currentItems.push(txtField.value);
+    currentItems.push(txtField.value+"Poista");
     if (typeof (Storage) !== "undefined") {
         localStorage.setItem("items", JSON.stringify(currentItems));
     }
@@ -52,12 +53,13 @@ function load() {
         if (currentItemsTemp) {
             currentItemsTemp.forEach(e => {
                 let btnChild = document.createElement("button");
-                btnChild.setAttribute("class", "btn-danger btn btn-lg rounded-1")
+                    btnChild.setAttribute("class", "btn-danger btn btn-lg rounded-1")
                 btnChild.innerHTML = "Poista";
                 btnChild.addEventListener("click", yeetCurrentChild);
                 let child = document.createElement("li");
+                child.setAttribute("value",e);
                 child.setAttribute("class", "list-group-item");
-                child.innerHTML = e;
+                child.innerHTML =  e.replace("Poista"," ");;
                 child.appendChild(btnChild);
                 list.appendChild(child);
             });
